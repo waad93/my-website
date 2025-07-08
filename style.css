@@ -36,6 +36,8 @@ color: #ecf0f3;
 padding: 8px 18px;
 font-size: 13px;
 border-radius: 6px;
+border: none;
+cursor: pointer;
 transition: all 0.4s ease;}
 .btn-primary:hover{
     background-color:#79baaa99 ;
@@ -91,7 +93,7 @@ header .header-content .content-text{margin-bottom: 6rem;}
 
 }
 #home .header-content h1{
-    font-size:60px ;
+    font-size:55px ;
     color: var(--primary-color);
     text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
     margin-top: 9px;
@@ -105,18 +107,18 @@ header .header-content .content-text{margin-bottom: 6rem;}
 header .header-content img{ max-width:220px ;}
 /* end  style header*/
 /*about*/
-#about , #skills{
+#about , #skills ,#profile{
     padding: 6rem 0;
 }
-#about h2 ,#skills h2{
+#about h2 ,#skills h2 , #profile h2 ,#contact h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 27px;
     color: var(--primary-color);
     font-weight: 500px;
     letter-spacing: 1px;
 }
 
-#about hr , #skills hr{width: 100px;
+#about hr , #skills hr , #profile hr{width: 100px;
     height: 2px;
     background-color: var(--seccondary-color);
 border:none ;
@@ -149,9 +151,8 @@ margin: 5px auto 0 ;
 /* SKkills*/
 #skills{
     background-color:var(--primary-color);
-    max-width:1100px ;
 }
-#skills h2{color:#fff;
+#skills h2 {color:#fff;
 font-family: "Poppins", sans-serif;}
 #skills .skills-content{
     margin-top: 4rem;
@@ -175,11 +176,69 @@ font-family: "Poppins", sans-serif;}
     transition:all 0.4s ease ;
 }
 #skills .skills-content .row .item:hover{
-    box-shadow: 7px 7px 7px #25252e;
+    box-shadow: 0 6px 7px rgba(0,0,0,0.5)
 }
 
 #skills .row img{
-    max-width: 50px;
+    max-width: 65px;
 }
+
 /* SKkills*/
+/*porfile*/
+#profile{
+    background-color: var(--bg-primary);
+}
+table{ background-color: #2a353353;
+border-collapse: collapse;
+margin:20px auto ;
+width: 100%;
+box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+transition:  all 0.3s ease;
+}
+th,td{
+    display: inline-flexbox;
+    padding: 8px;
+    border: 2px solid var(--bg-primary);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+table:hover{
+    box-shadow: 0 10px 11px rgba(0,0,0,0.4);
+    transform: translateY(-10px);
+}
+tr:hover{background-color: #192b2749;}
+/*porfile*/
+/*contact*/
+#contact{
+    padding: 3rem 0;
+}
+#contact .row{ margin-top: 4rem;
+display: grid ;
+    grid-template-columns: repeat(2, 1fr);
+    background-color:var(--bg-primary);
+    column-gap: 3rem;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.3);
+    padding:2rem 3rem ;
+    border-radius: 12px;
+
+}
+#contact .row input,#contact .row textarea {
+    display: block;
+    width:100%  ;
+    margin: 13px 0;
+    padding: 10px;
+    outline:none ;
+    background-color: #cccccc38;
+    border: 1px solid #bbb;
+}
+/*contact*/
+/*--footer*/
+#footer{
+    background-color: #222;
+    color:#fff
+}
+/*--footer*/
+
 
